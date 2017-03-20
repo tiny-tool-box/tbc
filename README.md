@@ -1,5 +1,8 @@
-# trouble-bc
-Landing site
+# Trouble Book Club
+
+Landing site: [http://troublebook.club](http://troublebook.club)
+
+This page is for managing the site.
 
 ## Layout template
 
