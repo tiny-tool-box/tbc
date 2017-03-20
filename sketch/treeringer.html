@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <script src="p5/p5.js"></script>
+   <script src="p5/p5.sound.js"></script>
+
+      <script type="text/javascript">
+
+// TODO https://p5js.org/examples/sound-load-and-play-sound.html
+
+var F = 240
+var osc, osc2;
+var playing = false;
+var radius = 0
+
+function setup() {
+   createCanvas(1000, 1000);
+
+  background(255,255,255);
+
+  backgroundColor = color(100,0,100);
+  textAlign(CENTER);
+
+  frameRate(5);
+
+  osc = new p5.Oscillator();
+  osc.setType('sine');
+  osc.freq(F);
+  osc.amp(0);
+  osc.start();
+
+  osc2 = new p5.Oscillator();
+  osc2.setType('sine');
+  osc2.freq(F + 10);
+  osc2.amp(0);
+  osc2.start();
+}
+
+function draw() {
+//  background(backgroundColor)
+
+
+  A = (mouseX/3)%400 + 100
+  B = (mouseY/3)%400 + 100
+
+
+  // TODO score87 = abs(max(A,B)/min(A,B) - 8.0/7.0)
+  score54 = abs(max(A,B)/min(A,B) - 5.0/4.0)
+  score43 = abs(max(A,B)/min(A,B) - 4.0/3.0)
+  score32 = abs(max(A,B)/min(A,B) - 3.0/2.0)
+
+  if (abs(A-B) >= 20){
+    if (score32 < score43 && score32 < score54) A = B*2.0/3.0
+    else if (score43 < score32 && score43 < score54) A = B*3.0/4.0
+    else A = B*4.0/5.0
+    console.log(A/B)
+  }
+
+  if (mouseX > 0 && mouseX < width && mouseY < height && mouseY > 0) {
+
+      osc.freq(A)
+      osc2.freq(B)
+  }
+
+  noStroke()
+  if (!playing){ fill(backgroundColor); stroke(255); }
+  else if (abs(A-B) < 10) fill(color(0, 200, 255))
+  else if (abs(A-B) < 20) fill(color(100, 255, 200))
+  else { fill(color(A/2+50, B/2+50, 0));
+    stroke(color( 150, (A+B < 500 ? 200 :0), (A+B)/4 )); }
+
+
+  radius -= random(50)
+  if (radius < 50 || !playing ) radius = width - 50 - random(20)
+
+  ellipse(width/2 + random(15),height/2 + random(15),radius)
+
+
+ // for (var x = 0; x<width; x+=sin(frameCount)*5+10){
+ //   for (var y = 0; y<height; y=+sin(frameCount)*5+10){
+ //     ellipse(x,y,sin(frameCount)*10)
+ //   }
+//  }
+
+  if (!playing) {
+    stroke(255)
+    noFill()
+    text('click 2 play & move ur mouse & click 2 stop', width/2, height/2);
+  } else if (frameCount%4 == 0){
+    console.log("bump");
+      osc.amp(sin(frameCount/3)/3, 0.05+ 0.05*random(3));
+      osc2.amp(sin(frameCount/10)/3, 0.05 + 0.05*random(3));
+
+  }
+}
+
+function mouseClicked() {
+  if (mouseX > 0 && mouseX < width && mouseY < height && mouseY > 0) {
+    if (!playing) {
+      // ramp amplitude to 0.5 over 0.1 seconds
+      osc.amp(0.5, 0.05);
+      osc2.amp(0.5, 0.05);
+
+      playing = true;
+    } else {
+      // ramp amplitude to 0 over 0.5 seconds
+      osc.amp(0, 0.5);
+      osc2.amp(0, 0.5);
+
+      playing = false;
+    }
+  }
+}
+
+
+      </script>
+   </head>
+   <body>
+   </body>
+</html>
