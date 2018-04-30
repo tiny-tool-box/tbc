@@ -1,0 +1,71 @@
+body {
+    font-family:Dosis;
+}
+
+.header {
+    max-width:400px;
+    margin:auto;
+    width:90%;
+    margin-top:100px;
+}
+
+.header h1 .L1{
+    font-weight: 400;
+    font-size:38px;
+    line-height: 46px;
+}
+.header h1 .L2{
+    font-weight: 200;
+    font-size:65px;
+    line-height: 55px;
+}
+.header h1 .L3{
+    font-weight: 200;
+    font-size:70px;
+    line-height: 70px;
+}
+.header h1 span{
+    display:block;
+    text-transform: uppercase;
+    text-align: center;
+}
+.header h2 {
+    font-size:20px;
+    text-align: center;
+    font-weight:200;
+}
+
+.item, .c4s {
+    border-color:#ddd;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.body-container{
+    width:100%;
+    max-width: 800px;
+    margin:auto;
+}
+.menu {
+    float:left;
+    width:46%;
+}
+.body {
+    float:right;
+    width:46%;
+}
+.footer{
+    clear:both;
+}
+
+.body {
+    text-align: justify;
+}
+
+.body h1{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size:20px;
+    margin-top:30px;
+    text-align: center;
+}
