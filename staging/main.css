@@ -1,58 +1,78 @@
+
+@font-face {
+    font-family: "_FuturaLT";
+    src:url("http://troublebook.club/Fonts/FutuLt_.ttf");
+}
+@font-face {
+    font-family: "_FuturaBR";
+    src:url("http://troublebook.club/Fonts/Futura Book Regular.otf");
+}
+@font-face {
+    font-family: "_FancySerif";
+    src:url("http://troublebook.club/Fonts/GARABD.TTF");
+}
 body {
-    font-family:Dosis;
+    font-family:"_FuturaLT";
 }
+.header{
 
-.header {
-    max-width:400px;
-    margin:auto;
-    width:90%;
-    margin-top:100px;
+    text-align: center;
 }
-
-.header h1 .L1{
-    font-weight: 400;
-    font-size:38px;
-    line-height: 46px;
-}
-.header h1 .L2{
-    font-weight: 200;
-    font-size:65px;
-    line-height: 55px;
-}
-.header h1 .L3{
-    font-weight: 200;
-    font-size:70px;
-    line-height: 70px;
+.firstlet{
+    float:left;
+    font-family: "_FancySerif";
+    font-size:70pt;
+    line-height: 70pt;
+    padding-right:10px;
 }
 .header h1 span{
     display:block;
-    text-transform: uppercase;
+    font-variant: all-small-caps;
     text-align: center;
+    font-family: "_FuturaLT";
+    font-size:18pt;
+}
+#logo{
+    width:150px;
+    margin-top:100px;
+    margin-bottom:20px;
 }
 .header h2 {
     font-size:20px;
+    font-variant: all-small-caps;
     text-align: center;
     font-weight:200;
+    font-family: "_FuturaLT";
+    font-size:18pt;
 }
 
 .item, .c4s {
+}
+.item img{
+    margin-top:30px;
+    width:100%;
     border-color:#ddd;
     border-style: solid;
     border-width: 1px;
+    font-size:11pt;
+}
+
+.item strong{
+    font-family: "_FancySerif";
 }
 
 .body-container{
     width:100%;
-    max-width: 800px;
+    max-width: 700px;
     margin:auto;
 }
 .menu {
     float:left;
-    width:46%;
+    width:325px;
 }
 .body {
     float:right;
-    width:46%;
+    width:325px;
 }
 .footer{
     clear:both;
