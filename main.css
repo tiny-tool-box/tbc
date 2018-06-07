@@ -1,15 +1,15 @@
 
 @font-face {
     font-family: "_FuturaLT";
-    src:url("http://troublebook.club/Fonts/FutuLt_.ttf");
+    src:url("https://trouble-bc.github.io/www//Fonts/FutuLt_.ttf");
 }
 @font-face {
     font-family: "_FuturaBR";
-    src:url("http://troublebook.club/Fonts/Futura Book Regular.otf");
+    src:url("https://trouble-bc.github.io/www//Futura Book Regular.otf");
 }
 @font-face {
     font-family: "_FancySerif";
-    src:url("http://troublebook.club/Fonts/GARABD.TTF");
+    src:url("https://trouble-bc.github.io/www//Fonts/GARABD.TTF");
 }
 body {
     font-family:"_FuturaLT";
