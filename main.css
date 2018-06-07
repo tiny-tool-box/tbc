@@ -1,0 +1,140 @@
+
+@font-face {
+    font-family: "_FuturaLT";
+    src:url("http://troublebook.club/Fonts/FutuLt_.ttf");
+}
+@font-face {
+    font-family: "_FuturaBR";
+    src:url("http://troublebook.club/Fonts/Futura Book Regular.otf");
+}
+@font-face {
+    font-family: "_FancySerif";
+    src:url("http://troublebook.club/Fonts/GARABD.TTF");
+}
+body {
+    font-family:"_FuturaLT";
+}
+.header{
+
+    text-align: center;
+}
+.firstlet{
+    float:left;
+    font-family: "_FancySerif";
+    font-size:70pt;
+    line-height: 70pt;
+    padding-right:10px;
+}
+.header h1 span{
+    display:block;
+    font-variant: all-small-caps;
+    text-align: center;
+    font-family: "_FuturaLT";
+    font-size:18pt;
+}
+#logo{
+    width:150px;
+    margin-top:100px;
+    margin-bottom:20px;
+}
+.header h2 {
+    font-size:20px;
+    font-variant: all-small-caps;
+    text-align: center;
+    font-weight:200;
+    font-family: "_FuturaLT";
+    font-size:18pt;
+
+}
+
+.item, .c4s {
+}
+.item img{
+    margin-top:30px;
+    width:100%;
+    border-color:#ddd;
+    border-style: solid;
+    border-width: 1px;
+    font-size:11pt;
+}
+
+.item strong{
+    font-family: "_FancySerif";
+}
+
+.body-container{
+    width:100%;
+    max-width: 700px;
+    margin:auto;
+}
+.menu {
+    float:left;
+    width:325px;
+}
+.body {
+    float:right;
+    width:325px;
+}
+.footer{
+    clear:both;
+}
+
+.body {
+    text-align: justify;
+}
+
+.body h1{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size:20px;
+    margin-top:30px;
+    text-align: center;
+}
+
+.body h2{
+    font-family: "_FancySerif";
+    font-size:15px;
+    margin-top:30px;
+    text-align: center;
+    background-color:#000;
+    padding:5px;
+    color:#fff;
+}
+
+.third{
+
+    width:213px;
+    margin:10px;
+
+    border-color:#ddd;
+    border-style: solid;
+    border-width: 1px;
+    float:left;
+}
+
+.quote{
+    font-family: "_FancySerif";
+    width:60%;
+    margin:auto;
+    font-size:24pt;
+    text-align: center;
+    color:#333;
+
+}
+
+
+.half{
+    width:330px;
+    margin:10px;
+
+    border-color:#ddd;
+    border-style: solid;
+    border-width: 1px;
+    float:left;
+    display:block;
+}
+.body h3{
+    font-family: "_FancySerif";
+    font-size:18pt;
+    text-align: left;
+}
