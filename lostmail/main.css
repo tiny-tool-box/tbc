@@ -144,6 +144,12 @@ body {
     color:#fff;
 }
 
+.footer{
+    clear:both;
+    padding-top:70px;
+    padding-bottom:70px;
+    text-align:center;
+}
 
 .bureaucrat{
     background-color:#eee;
