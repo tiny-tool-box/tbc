@@ -64,16 +64,20 @@ body {
 
 .body-container{
     width:100%;
-    max-width: 700px;
+    max-width: 730px;
+    padding-left:15px;
+    padding-right:15px;
     margin:auto;
 }
 .menu {
     float:left;
-    width:325px;
+    max-width:325px;
+    width:100%;
 }
 .body {
     float:right;
-    width:325px;
+    max-width:325px;
+    width:100%;
 }
 .footer{
     clear:both;
