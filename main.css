@@ -79,6 +79,11 @@ body {
     max-width:325px;
     width:100%;
 }
+.bodyfull {
+    clear:both;
+    max-width:700px;
+    width:100%;
+}
 .footer{
     clear:both;
     padding-top:70px;
