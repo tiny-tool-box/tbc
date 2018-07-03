@@ -1,5 +1,5 @@
 
- function cipher_(original, direction = 1) {
+ function cipher_(original, direction = -1) {
         const A = $("#cipher").val().split('').reduce( (acc, cur) => acc + 1, 0);
         const B = $("#cipher").val().split('').reduce( (acc, cur) => acc + (cur == 's' ? 1 : 0), 0);
         const C = $("#cipher").val().split('').reduce( (acc, cur) => acc + (cur == 'o' || cur == 'i' ? 1 : 0), 0);
@@ -36,7 +36,6 @@
     });
 
     $(".coded-image").each(function(){
-        console.log(cipher_($(this).attr('data-src'), direction) );
         if ($(".checksum").text() == "The passcode is correct!") {
             $(this).html("<a href='" + cipher_($(this).attr('data-link'), direction) + "'><img src='" + cipher_($(this).attr('data-src'), direction) + "'></a>")
         } else {
