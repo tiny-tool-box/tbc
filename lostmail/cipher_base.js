@@ -1,5 +1,9 @@
 
  function cipher_(original, direction = -1) {
+        if (direction==0){
+            console.log(original2)
+            return original;
+        }
         const A = $("#cipher").val().split('').reduce( (acc, cur) => acc + 1, 0);
         const B = $("#cipher").val().split('').reduce( (acc, cur) => acc + (cur == 's' ? 1 : 0), 0);
         const C = $("#cipher").val().split('').reduce( (acc, cur) => acc + (cur == 'o' || cur == 'i' ? 1 : 0), 0);
