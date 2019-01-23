@@ -93,6 +93,7 @@ body {
 .body {
     margin:auto;
     width:600px;
+    max-width:90%;
 }
 .footer{
     clear:both;
@@ -166,4 +167,9 @@ body {
 .correct {
     text-decoration: none;
     color:#000;
+}
+
+
+.pubimg {
+    width:170px;margin:5px;float:left;
 }
