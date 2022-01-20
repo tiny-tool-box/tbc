@@ -5,11 +5,11 @@
 }
 @font-face {
     font-family: "_FuturaBR";
-    src:url("https://troublebook.club/Fonts/Futura Book Regular.otf");
+    src:url("Fonts/Futura Book Regular.otf");
 }
 @font-face {
     font-family: "_FancySerif";
-    src:url("https://troublebook.club/Fonts/GARABD.TTF");
+    src:url("Fonts/GARABD.TTF");
 }
 body {
     font-family:"_FuturaLT";
@@ -48,10 +48,13 @@ body {
 
 }
 
+p {
+  text-align: left;
+}
 .item, .c4s {
 }
 .fullimg{
-    margin-top:30px;
+    margin-bottom:40px;
     width:100%;
     border-color:#ddd;
     border-style: solid;
