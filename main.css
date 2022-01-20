@@ -1,22 +1,23 @@
 
 @font-face {
     font-family: "_FuturaLT";
-    src:url("https://trouble-bc.github.io/www//Fonts/FutuLt_.ttf");
+    src:url("Fonts/FutuLt_.ttf");
 }
 @font-face {
     font-family: "_FuturaBR";
-    src:url("https://trouble-bc.github.io/www//Futura Book Regular.otf");
+    src:url("https://troublebook.club/Fonts/Futura Book Regular.otf");
 }
 @font-face {
     font-family: "_FancySerif";
-    src:url("https://trouble-bc.github.io/www//Fonts/GARABD.TTF");
+    src:url("https://troublebook.club/Fonts/GARABD.TTF");
 }
 body {
     font-family:"_FuturaLT";
 }
 .header{
-
     text-align: center;
+    width:50%;
+    max-width: 800px;
 }
 .firstlet{
     float:left;
@@ -49,7 +50,7 @@ body {
 
 .item, .c4s {
 }
-.item img{
+.fullimg{
     margin-top:30px;
     width:100%;
     border-color:#ddd;
@@ -58,7 +59,7 @@ body {
     font-size:11pt;
 }
 
-.item strong{
+strong{
     font-family: "_FancySerif";
 }
 
